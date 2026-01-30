@@ -8,7 +8,8 @@
     ".": "./index.js"
   },
   "scripts": {
-    "test": "node index.js"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "keywords": [
     "ffmpeg",
@@ -31,7 +32,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ytsixx/ffsixx.git"
+    "url": "git+https://github.com/Ytsixx/ffsixx.git"
   },
   "bugs": {
     "url": "https://github.com/Ytsixx/ffsixx/issues"
@@ -42,7 +43,6 @@
   },
   "files": [
     "index.js",
-    "fontes",
     "README.md",
     "LICENSE"
   ],
@@ -53,6 +53,8 @@
     "image-size": "^2.0.2"
   },
   "devDependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
     "node-gyp": "^12.2.0"
   }
 }

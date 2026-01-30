@@ -16,7 +16,7 @@ function _execFFmpeg(inputStream, command) {
 /**
  * FERRAMENTA: Resize Inteligente (Cover, Contain, Fill)
  */
-export async function resize(buffer, { width = -1, height = -1, fit = 'cover', background = 'black' } = {}) {
+export default async function resize(buffer, { width = -1, height = -1, fit = 'cover', background = 'black' } = {}) {
   if (!Buffer.isBuffer(buffer)) throw new Error('Input inválido');
   if (width === -1 && height === -1) throw new Error('Defina ao menos largura ou altura');
 
