@@ -1,0 +1,58 @@
+{
+  "name": "ffsixx",
+  "version": "1.0.0",
+  "description": "Ultra-leve biblioteca de manipulação de imagens com FFmpeg para Node.js",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "ffmpeg",
+    "image",
+    "video",
+    "compression",
+    "watermark",
+    "resize",
+    "crop",
+    "buffer",
+    "stream",
+    "media",
+    "whatsapp",
+    "telegram",
+    "bot",
+    "termux",
+    "nodejs"
+  ],
+  "author": "Ytsixx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ytsixx/ffsixx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ytsixx/ffsixx/issues"
+  },
+  "homepage": "https://github.com/Ytsixx/ffsixx#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "index.js",
+    "fontes",
+    "README.md",
+    "LICENSE"
+  ],
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "exif-reader": "^2.0.3",
+    "fluent-ffmpeg": "^2.1.3",
+    "image-size": "^2.0.2"
+  },
+  "devDependencies": {
+    "node-gyp": "^12.2.0"
+  }
+}
