@@ -1,6 +1,6 @@
 {
   "name": "ffsixx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra-leve biblioteca de manipulação de imagens com FFmpeg para Node.js",
   "type": "module",
   "main": "index.js",
