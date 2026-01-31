@@ -14,19 +14,13 @@
   "keywords": [
     "ffmpeg",
     "image",
-    "video",
     "compression",
     "watermark",
     "resize",
-    "crop",
-    "buffer",
-    "stream",
-    "media",
+    "sticker",
     "whatsapp",
-    "telegram",
     "bot",
-    "termux",
-    "nodejs"
+    "termux"
   ],
   "author": "Ytsixx",
   "license": "MIT",
@@ -34,17 +28,15 @@
     "type": "git",
     "url": "git+https://github.com/Ytsixx/ffsixx.git"
   },
-  "bugs": {
-    "url": "https://github.com/Ytsixx/ffsixx/issues"
-  },
-  "homepage": "https://github.com/Ytsixx/ffsixx#readme",
   "engines": {
     "node": ">=16.0.0"
   },
   "files": [
     "index.js",
+    "src/",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "database/"
   ],
   "packageManager": "pnpm@10.28.0",
   "dependencies": {

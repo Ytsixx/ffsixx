@@ -33,7 +33,7 @@ export async function watermark(buffer, options = {}) {
   } = options;
 
   // 🔧 2. Fallback e Validação da fonte
-  const fontPath = resolve('./fontes/SNPro-Bold.ttf');
+  const fontPath = resolve('./database/fontes/SNPro-Bold.ttf');
   if (text && !existsSync(fontPath)) {
     throw new Error(`Fonte não encontrada no caminho: ${fontPath}`);
   }

@@ -1,4 +1,4 @@
-// Importações de todos os módulos
+// 1. Importações Únicas
 import { compress } from './src/compress.js';
 import { resize } from './src/resize.js';
 import resizeCover from './src/resizeCover.js';
@@ -6,8 +6,10 @@ import { watermark } from './src/watermark.js';
 import { crop } from './src/crop.js';
 import { flip, flop } from './src/mirror.js';
 import { applyFilter } from './src/applyFilter.js';
+import { sticker } from './src/sticker.js';
+import { frame } from './src/frame.js';
 
-// Exportação nomeada
+// 2. Exportação Nomeada (Sem Duplicatas)
 export {
   compress,
   resize,
@@ -16,10 +18,12 @@ export {
   crop,
   flip,
   flop,
-  applyFilter
+  applyFilter,
+  sticker,
+  frame
 };
 
-// ✅ Export default (API principal)
+// 3. Exportação Default
 export default {
   compress,
   resize,
@@ -28,5 +32,7 @@ export default {
   crop,
   flip,
   flop,
-  applyFilter
+  applyFilter,
+  sticker,
+  frame
 };
