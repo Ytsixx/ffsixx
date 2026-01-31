@@ -5,7 +5,7 @@ import { readFile, writeFile } from 'fs/promises';
 
 /**
  * MOTOR INTERNO: O coração da lib. 
- * Ele conecta o FFmpeg ao sistema de Streams do Node.js.
+ * Ele conecta o FFmpeg ao sistema de Streams do Node.js. 
  */
 function _execFFmpeg(inputStream, command) {
   return new Promise((resolve, reject) => {

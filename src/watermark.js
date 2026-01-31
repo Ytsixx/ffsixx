@@ -13,7 +13,7 @@ function _execFFmpeg(inputStream, command) {
     command.on('error', err => { command.kill(); reject(err); }).pipe(outputStream, { end: true });
   });
 }
-
+ 
 /**
  * FERRAMENTA: Watermark com Blindagem e Fonte Local
  */

@@ -107,3 +107,4 @@ export async function applyFilter(buffer, filterType, options = {}) {
   command.videoFilters(filterString);
   return _execFFmpeg(inputStream, command);
 }
+

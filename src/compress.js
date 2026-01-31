@@ -1,7 +1,7 @@
 import ffmpeg from 'fluent-ffmpeg';
 import { Readable, PassThrough } from 'stream';
 import sizeOf from 'image-size';
-
+ 
 /**
  * MOTOR INTERNO: Executa o comando FFmpeg via Streams
  */

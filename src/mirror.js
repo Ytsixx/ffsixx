@@ -12,7 +12,7 @@ function _execFFmpeg(inputStream, command) {
   });
 }
 
-/**
+/** 
  * FERRAMENTA: Flip (Espelhar Horizontalmente)
  */
 export async function flip(buffer) {

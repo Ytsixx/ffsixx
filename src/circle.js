@@ -10,7 +10,7 @@ function _execFFmpeg(inputStream, command) {
     outputStream.on('error', err => { command.kill(); reject(err); });
     command.on('error', err => { command.kill(); reject(err); }).pipe(outputStream, { end: true });
   });
-}
+} 
 
 export async function circle(buffer) {
   if (!Buffer.isBuffer(buffer)) throw new Error('Input inválido');

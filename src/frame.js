@@ -12,7 +12,7 @@ function _execFFmpeg(inputStream, command) {
   });
 }
 
-/**
+/** 
  * FERRAMENTA: Moldura Estilizada (Frame)
  * Adiciona bordas e um leve efeito artístico.
  */

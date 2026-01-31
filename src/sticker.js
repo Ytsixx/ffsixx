@@ -10,7 +10,7 @@ function _execFFmpeg(inputStream, command) {
     outputStream.on('error', err => { command.kill(); reject(err); });
     command.on('error', err => { command.kill(); reject(err); }).pipe(outputStream, { end: true });
   });
-}
+} 
 
 export async function sticker(buffer, options = { quality: 80 }) {
   if (!Buffer.isBuffer(buffer)) throw new Error('Input inválido');
