@@ -1,168 +1,316 @@
+<p align="center">
+    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
+</p>
+<p align="center"><h1 align="center">FFSIXX.GIT</h1></p>
+<p align="center">
+	<em><code>❯ REPLACE-ME</code></em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/Ytsixx/ffsixx.git?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/Ytsixx/ffsixx.git?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/Ytsixx/ffsixx.git?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/Ytsixx/ffsixx.git?style=default&color=0080ff" alt="repo-language-count">
+</p>
+<p align="center"><!-- default option, no dependency badges. -->
+</p>
+<p align="center">
+	<!-- default option, no dependency badges. -->
+</p>
+<br>
 
+## 🔗 Table of Contents
 
-# 🚀 FFSIXX
+- [📍 Overview](#-overview)
+- [👾 Features](#-features)
+- [📁 Project Structure](#-project-structure)
+  - [📂 Project Index](#-project-index)
+- [🚀 Getting Started](#-getting-started)
+  - [☑️ Prerequisites](#-prerequisites)
+  - [⚙️ Installation](#-installation)
+  - [🤖 Usage](#🤖-usage)
+  - [🧪 Testing](#🧪-testing)
+- [📌 Project Roadmap](#-project-roadmap)
+- [🔰 Contributing](#-contributing)
+- [🎗 License](#-license)
+- [🙌 Acknowledgments](#-acknowledgments)
 
-**FFSIXX** é uma biblioteca **ultra-leve e poderosa** para manipulação de imagens no **Node.js**, construída sobre o motor do **FFmpeg**.
+---
 
-Diferente de outras libs, a FFSIXX trabalha **100% com Buffers e Streams**, sendo perfeita para **Bots (WhatsApp/Telegram)**, **CLI tools** e ambientes limitados como **Termux**.
+## 📍 Overview
 
-![NPM Version](https://img.shields.io/npm/v/ffsixx.svg)
-![License](https://img.shields.io/npm/l/ffsixx.svg)
-![Downloads](https://img.shields.io/npm/dm/ffsixx.svg)
+<code>❯ REPLACE-ME</code>
 
+---
 
-## ✨ Destaques
+## 👾 Features
 
-- ⚡ **Zero dependências pesadas** — usa o FFmpeg do sistema
-- 🎯 **Compressão Inteligente** por tamanho alvo (KB)
-- 🤖 **Bot-Ready** (stickers, filtros, molduras)
-- 🖋️ **Branding Ready** (marca d'água texto ou logo)
-- 🧠 **Smart Resize** (`cover`, `contain`, `fill`)
-- 💾 **Stream Friendly** (sem arquivos temporários)
-- 🧩 **TypeScript Ready**
+<code>❯ REPLACE-ME</code>
 
+---
 
-## 📦 Instalação
+## 📁 Project Structure
 
-### Pré-requisitos
-Certifique-se de ter o **FFmpeg** instalado:
-
-- **Termux:** ```bash pkg install ffmpeg ```
-- **Ubuntu/Debian:** ```bash sudo apt install ffmpeg```
-- **macOS:** ```bash brew install ffmpeg```
-
-### Pacote
-```bash
-npm install ffsixx
-
-pnpm add ffsixx
+```sh
+└── ffsixx.git/
+    ├── LICENSE
+    ├── README.md
+    ├── database
+    │   ├── fontes
+    │   └── imagem
+    ├── index.js
+    ├── mocharc.json
+    ├── package.json
+    ├── pnpm-lock.yaml
+    ├── src
+    │   ├── applyFilter.js
+    │   ├── circle.js
+    │   ├── compress.js
+    │   ├── convert.js
+    │   ├── crop.js
+    │   ├── frame.js
+    │   ├── mirror.js
+    │   ├── resize.js
+    │   ├── resizeCover.js
+    │   ├── sticker.js
+    │   └── watermark.js
+    └── test
+        ├── fonts.test.js
+        ├── index.test.js
+        └── resize.test.js
 ```
 
 
-🛠️ Como Usar
-
-</details><details>
-  <summary><strong>🖼️ Molduras e Filtros</strong></summary>
-  ```js
-  import { frame, applyFilter } from 'ffsixx';
-
-const moldura = await frame(buffer, {
-  color: 'white'
-});
-```
-
-<details>
-  <summary><strong>📉 Compressão Inteligente (Target Size)</strong></summary>
-```js
-import { compress } from 'ffsixx';
-
-const { buffer, sizeKB } = await compress(img, {
-  maxSizeKB: 300
-});
-```
-
-
-</details><details>
-  <summary><strong>🧩 Stickers (WhatsApp / Telegram)</strong></summary>
-```js
-  import { sticker } from 'ffsixx';
-const res = await sticker(buffer, {
-  quality: 80
-});
-```
-
-
-
-</details><details>
-  <summary><strong>🖋️ Marca d'água (Branding)</strong></summary>
-  ```js
-  
-  import { watermark } from 'ffsixx';
-const res = await watermark(buffer, {
-  text: 'SIXX CORE',
-  position: 'bottom-right'
-});
-
-```
-
+### 📂 Project Index
+<details open>
+	<summary><b><code>FFSIXX.GIT/</code></b></summary>
+	<details> <!-- __root__ Submodule -->
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/pnpm-lock.yaml'>pnpm-lock.yaml</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/mocharc.json'>mocharc.json</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/index.js'>index.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/package.json'>package.json</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- src Submodule -->
+		<summary><b>src</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/crop.js'>crop.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/sticker.js'>sticker.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/mirror.js'>mirror.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/watermark.js'>watermark.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/resizeCover.js'>resizeCover.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/applyFilter.js'>applyFilter.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/resize.js'>resize.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/compress.js'>compress.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/convert.js'>convert.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/circle.js'>circle.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/src/frame.js'>frame.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- test Submodule -->
+		<summary><b>test</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/test/fonts.test.js'>fonts.test.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/test/resize.test.js'>resize.test.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/test/index.test.js'>index.test.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- database Submodule -->
+		<summary><b>database</b></summary>
+		<blockquote>
+			<details>
+				<summary><b>fontes</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/Ytsixx/ffsixx.git/blob/master/database/fontes/SNPro-Bold.ttf'>SNPro-Bold.ttf</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
 </details>
 
-<details>
-  <summary><strong>📚 Ver tabela completa da API</strong></summary>
-  
-  Função	Parâmetros	Descrição
+---
+## 🚀 Getting Started
 
-compress	maxSizeKB, mode, format	Comprime até atingir o peso alvo
-sticker	quality	Gera WebP 512x512
-frame	color, thickness	Adiciona bordas
-applyFilter	name	grayscale, sepia, invert
-watermark	text, logo, position	Marca d'água
-resize	width, height, fit	cover, contain, fill
-crop	x, y, width, height	Recorte
-flip / flop	buffer	Espelhamento
+### ☑️ Prerequisites
+
+Before getting started with ffsixx.git, ensure your runtime environment meets the following requirements:
+
+- **Programming Language:** JavaScript
+- **Package Manager:** Npm
 
 
-</details>
+### ⚙️ Installation
 
-📂 Fontes para Marca d'Água
+Install ffsixx.git using one of the following methods:
 
-Para texto customizado, coloque sua fonte em:
+**Build from source:**
 
-./fontes/SNPro-Bold.ttf
-
-Caso não exista, a FFSIXX usa a fonte padrão do sistema.
-
-
-🤝 Contribuição
-
-1. Fork o projeto
-
-
-2. Crie uma branch:
-git checkout -b feature/NovaFeature
-
-
-3. Commit: git commit -m "feat: nova ferramenta"
-
-
-4. Abra um Pull Request
-
-
-
-
-📝 Licença
-
-Licença MIT.
-
-
-👤 Autor
-
-Ytsixx
-
-* 🐙 GitHub: [@Ytsixx](https://github.com/Ytsixx)
-* 📦 NPM: [ffsixx](https://www.npmjs.com/package/ffsixx)
-
-
-
-<details>
-  <summary><strong>👀 Clique para ver mais</strong></summary>Aqui fica o conteúdo escondido 😈
-Pode ter texto, listas, código, links, tudo.
-```js
-console.log("sixx.js </>");
+1. Clone the ffsixx.git repository:
+```sh
+❯ git clone https://github.com/Ytsixx/ffsixx.git
 ```
+
+2. Navigate to the project directory:
+```sh
+❯ cd ffsixx.git
+```
+
+3. Install the project dependencies:
+
+
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+
+```sh
+❯ npm install
+```
+
+
+
+
+### 🤖 Usage
+Run ffsixx.git using the following command:
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+
+```sh
+❯ npm start
+```
+
+
+### 🧪 Testing
+Run the test suite using the following command:
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+
+```sh
+❯ npm test
+```
+
+
+---
+## 📌 Project Roadmap
+
+- [X] **`Task 1`**: <strike>Implement feature one.</strike>
+- [ ] **`Task 2`**: Implement feature two.
+- [ ] **`Task 3`**: Implement feature three.
+
+---
+
+## 🔰 Contributing
+
+- **💬 [Join the Discussions](https://github.com/Ytsixx/ffsixx.git/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/Ytsixx/ffsixx.git/issues)**: Submit bugs found or log feature requests for the `ffsixx.git` project.
+- **💡 [Submit Pull Requests](https://github.com/Ytsixx/ffsixx.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+
+<details closed>
+<summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your github account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+   ```sh
+   git clone https://github.com/Ytsixx/ffsixx.git
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to github**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
 </details>
 
-Desenvolvido com ⚡ por FFSIXX Team
+<details closed>
+<summary>Contributor Graph</summary>
+<br>
+<p align="left">
+   <a href="https://github.com{/Ytsixx/ffsixx.git/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=Ytsixx/ffsixx.git">
+   </a>
+</p>
+</details>
 
+---
 
-💣 **Resultado:**  
-- README **limpo**
-- Conteúdo avançado **oculto**
-- Profissional pra **npm + GitHub**
-- Cara de projeto grande 😎
+## 🎗 License
 
-Se quiser, próximo nível:
-- 🛡️ Badges extras (coverage, size, types)
-- 📊 GIF de demonstração
-- 🧠 Docs separada (`/docs`)
-- 🧪 Seção de benchmarks
+This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+## 🙌 Acknowledgments
+
+- List any resources, contributors, inspiration, etc. here.
+
+---
