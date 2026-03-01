@@ -8,6 +8,9 @@ import { flip, flop } from './src/mirror.js';
 import { applyFilter } from './src/applyFilter.js';
 import { sticker } from './src/sticker.js';
 import { frame } from './src/frame.js';
+import { rotate } from './src/rotate.js';
+import { sharpen } from './src/sharpen.js';
+import { adjust } from './src/adjust.js';
 
 // 2. Exportação Nomeada (Sem Duplicatas)
 export {
@@ -20,7 +23,10 @@ export {
   flop,
   applyFilter,
   sticker,
-  frame
+  frame,
+  rotate,
+  sharpen,
+  adjust
 };
 
 // 3. Exportação Default
@@ -34,6 +40,8 @@ export default {
   flop,
   applyFilter,
   sticker,
-  frame
+  frame,
+  rotate,
+  sharpen,
+  adjust
 };
-
