@@ -8,7 +8,7 @@ describe('🚀 FFSIXX - Mega Teste de Integração', function() {
   let img;
 
   before(async () => {
-    img = await readFile('./database/imagem/t.jpeg');
+    img = await readFile('./database/imagem/tt.jpeg');
   });
 
   it('deve validar o Export Default (API completa)', () => {
