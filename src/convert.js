@@ -1,3 +1,9 @@
+/**
+ * ffsixx - feliz aniversário para mim
+ * Moçambique avança com devs
+ * by sixx.js [19\/03\/2004]
+ */
+
 import ffmpeg from 'fluent-ffmpeg';
 import { Readable, PassThrough } from 'stream';
 import sizeOf from 'image-size';
@@ -58,4 +64,3 @@ export async function convert(buffer, { format = 'webp', quality = 80 } = {}) {
   // 3. Chamar o motor que estava faltando
   return _execFFmpeg(inputStream, command);
 }
-

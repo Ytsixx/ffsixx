@@ -1,3 +1,9 @@
+/**
+ * ffsixx - feliz aniversário para mim
+ * Moçambique avança com devs
+ * by sixx.js [19\/03\/2004]
+ */
+
 // ─── Core ────────────────────────────────────────────────────────────────────
 import { compress }    from './src/compress.js';
 import { resize }      from './src/resize.js';
@@ -28,14 +34,46 @@ import { overlay } from './src/overlay.js';
 import { border }  from './src/border.js';
 import { shadow }  from './src/shadow.js';
 
+// ─── Forma ────────────────────────────────────────────────────────────────────
+import { circle } from './src/circle.js';
+
 // ─── Utilitários ──────────────────────────────────────────────────────────────
-import { dominant }               from './src/dominant.js';
-import { collage }                from './src/collage.js';
-import { noise }                  from './src/noise.js';
+import { dominant }                                          from './src/dominant.js';
+import { collage }                                           from './src/collage.js';
+import { noise }                                             from './src/noise.js';
 import { strip, toBase64, fromBase64, getInfo, placeholder } from './src/utils.js';
 
 // ─── Animação ─────────────────────────────────────────────────────────────────
 import { gif, speed } from './src/gif.js';
+import {
+  gifReverse, gifOptimize, gifSpeed, imagesToGif, toAnimatedWebP
+} from './src/animation.js';
+
+// ─── Formatos Modernos ────────────────────────────────────────────────────────
+import { toAvif } from './src/formats.js';
+import { convert } from './src/convert.js';
+
+// ─── Vídeo ────────────────────────────────────────────────────────────────────
+import {
+  thumbnail, extractFrames, compressVideo,
+  videoToGif, watermarkVideo, videoSpeed,
+  addSubtitle, videoInfo
+} from './src/video.js';
+
+// ─── Hardware Acceleration ────────────────────────────────────────────────────
+import { detectHwAccel } from './src/hwaccel.js';
+
+// ─── Text PRO ─────────────────────────────────────────────────────────────────
+import { textOverlay, memeGenerator } from './src/text.js';
+
+// ─── Effects PRO ──────────────────────────────────────────────────────────────
+import {
+  removeBackground, faceCrop, qrOverlay,
+  memeFilter, advancedCollage, applyPreset
+} from './src/effects-pro.js';
+
+// ─── Progress ─────────────────────────────────────────────────────────────────
+import { withProgress, withProgressAll, createProgress } from './src/progress.js';
 
 // ─── Exportação Nomeada ───────────────────────────────────────────────────────
 export {
@@ -48,10 +86,28 @@ export {
   glitch, sketch, cartoon, emboss, duotone,
   // Composição
   overlay, border, shadow,
+  // Forma
+  circle,
   // Utilitários
   dominant, collage, noise, strip, toBase64, fromBase64, getInfo, placeholder,
   // Animação
-  gif, speed
+  gif, speed,
+  gifReverse, gifOptimize, gifSpeed, imagesToGif, toAnimatedWebP,
+  // Formatos
+  toAvif, convert,
+  // Vídeo
+  thumbnail, extractFrames, compressVideo,
+  videoToGif, watermarkVideo, videoSpeed,
+  addSubtitle, videoInfo,
+  // HW Accel
+  detectHwAccel,
+  // Text PRO
+  textOverlay, memeGenerator,
+  // Effects PRO
+  removeBackground, faceCrop, qrOverlay,
+  memeFilter, advancedCollage, applyPreset,
+  // Progress
+  withProgress, withProgressAll, createProgress,
 };
 
 // ─── Exportação Default ───────────────────────────────────────────────────────
@@ -65,8 +121,26 @@ export default {
   glitch, sketch, cartoon, emboss, duotone,
   // Composição
   overlay, border, shadow,
+  // Forma
+  circle,
   // Utilitários
   dominant, collage, noise, strip, toBase64, fromBase64, getInfo, placeholder,
   // Animação
-  gif, speed
+  gif, speed,
+  gifReverse, gifOptimize, gifSpeed, imagesToGif, toAnimatedWebP,
+  // Formatos
+  toAvif, convert,
+  // Vídeo
+  thumbnail, extractFrames, compressVideo,
+  videoToGif, watermarkVideo, videoSpeed,
+  addSubtitle, videoInfo,
+  // HW Accel
+  detectHwAccel,
+  // Text PRO
+  textOverlay, memeGenerator,
+  // Effects PRO
+  removeBackground, faceCrop, qrOverlay,
+  memeFilter, advancedCollage, applyPreset,
+  // Progress
+  withProgress, withProgressAll, createProgress,
 };

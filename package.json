@@ -1,11 +1,18 @@
 {
   "name": "ffsixx",
-  "version": "1.1.0",
-  "description": "Ultra-leve biblioteca de manipulação de imagens com FFmpeg para Node.js",
+  "version": "1.5.0",
+  "description": "Manipulação de imagens e vídeos com FFmpeg — text PRO, meme, QR, remove BG, presets, progress, GPU",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "ffsixx": "./cli/index.js"
+  },
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./wasm": "./wasm.js",
+    "./stream": "./stream.js",
+    "./batch": "./batch.js",
+    "./progress": "./progress.js"
   },
   "scripts": {
     "test": "mocha",
@@ -14,13 +21,34 @@
   "keywords": [
     "ffmpeg",
     "image",
+    "video",
     "compression",
     "watermark",
     "resize",
     "sticker",
     "whatsapp",
     "bot",
-    "termux"
+    "termux",
+    "cli",
+    "wasm",
+    "stream",
+    "batch",
+    "browser",
+    "edge",
+    "gif",
+    "avif",
+    "webp",
+    "thumbnail",
+    "hwaccel",
+    "nvenc",
+    "vaapi",
+    "gpu",
+    "meme",
+    "qrcode",
+    "text-overlay",
+    "remove-background",
+    "presets",
+    "progress"
   ],
   "author": "Ytsixx",
   "license": "MIT",
@@ -29,20 +57,38 @@
     "url": "git+https://github.com/Ytsixx/ffsixx.git"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "files": [
     "index.js",
+    "wasm.js",
+    "stream.js",
+    "batch.js",
+    "progress.js",
+    "cli/",
     "src/",
     "README.md",
     "LICENSE",
-    "database/"
+    "database/fontes/"
   ],
   "packageManager": "pnpm@10.28.0",
   "dependencies": {
     "exif-reader": "^2.0.3",
     "fluent-ffmpeg": "^2.1.3",
-    "image-size": "^2.0.2"
+    "image-size": "^2.0.2",
+    "qrcode": "^1.5.4"
+  },
+  "peerDependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.0",
+    "@ffmpeg/util": "^0.12.0"
+  },
+  "peerDependenciesMeta": {
+    "@ffmpeg/ffmpeg": {
+      "optional": true
+    },
+    "@ffmpeg/util": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "chai": "^6.2.2",

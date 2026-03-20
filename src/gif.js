@@ -1,3 +1,9 @@
+/**
+ * ffsixx - feliz aniversário para mim
+ * Moçambique avança com devs
+ * by sixx.js [19\/03\/2004]
+ */
+
 import ffmpeg from 'fluent-ffmpeg';
 import { PassThrough } from 'stream';
 import { writeFile, unlink } from 'fs/promises';
